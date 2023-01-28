@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><%= title %></title>
+	<%- include("partials/head.ejs")%>
+</head>
+<body>
+	<%- include("partials/navigator.ejs")%>
+	<div class="container vh-100 d-flex justify-content-center align-items-center flex-column">
+		<div class="card-header">
+			<h1>Contact me</h1>
+		</div>
+		<div class="card-body text-start text-white">
+			<form action="">
+
+				<div class="mb-3">
+					<label for="email">Email</label>
+					<input type="email" placeholder="email" class="form-control">
+				</div>
+
+
+				<div class="mb-3">
+
+					<label for="mesage">Mesage</label>
+					<textarea type="mesage" rows="3" class="form-control"></textarea>
+				</div>
+
+				<button class="btn btn-primary btn-block">Save</button>
+
+			</form>
+		</div>
+	</div>
+	<%- include("partials/footer")%>
+</body>
+</html>
